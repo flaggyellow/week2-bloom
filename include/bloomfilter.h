@@ -1,11 +1,11 @@
-# ifndef _BLOOMFILTER_H_
-# define _BLOOMFILTER_H_
+#ifndef _BLOOMFILTER_H_
+#define _BLOOMFILTER_H_
 
-# include <vector>
-# include <string>
-# include "bitmap.h"
+#include <vector>
+#include <string>
+#include "bitmap.h"
 using namespace std;
-# define S_OK 0
+#define S_OK 0
 
 namespace bloomfilter{
 
@@ -20,7 +20,6 @@ namespace bloomfilter{
         ~Bloomfilter() = default;
         unsigned int _size;
         Bitmap _bitmap;
-
     };
 
 

@@ -13,22 +13,23 @@ namespace bloomfilter{
         int bit_set(unsigned int *index);
         int bit_reset(unsigned int *index);
         bool bit_query(unsigned int *index);
-    private:
+        bool mapStatus(int expo, unsigned long map_size);
         ~Bitmap() = default;
+    private: 
         unsigned int _applyMask(unsigned int *index);
         int _expo;
         std::vector<int> _bit;
     };
 
     Bitmap::Bitmap()
-    : _expo(32)
+    : _expo(20)
     , _bit(1<<(_expo-5), 0)
     {}
 
     Bitmap::Bitmap(int expo)
     : _expo(expo)
     {
-        if(_expo<5 || _expo>32) _expo = 32;
+        if(_expo<5 || _expo>32) _expo = 20;
         _bit = std::vector<int>(1<<(_expo-5), 0);
     }
 
@@ -61,6 +62,13 @@ namespace bloomfilter{
         unsigned int j = ind % 32;
         unsigned int target_bit = (0x00000001 << j) & _bit[i];
         return (target_bit > 0);
+    }
+
+    bool Bitmap::mapStatus(int expo, unsigned long map_size){
+        bool result = true;
+        if(expo != this->_expo) result = false;
+        if(map_size != this->_bit.size()) result = false;
+        return result;
     }
 
 }   // namespace bloomfilter
