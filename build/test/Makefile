@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -155,6 +152,33 @@ BitmapTest.cc.s:
 	cd /root/huangqz/codes/filter/bloom/build && $(MAKE) -f test/CMakeFiles/utest.dir/build.make test/CMakeFiles/utest.dir/BitmapTest.cc.s
 .PHONY : BitmapTest.cc.s
 
+BloomfilterTest.o: BloomfilterTest.cc.o
+
+.PHONY : BloomfilterTest.o
+
+# target to build an object file
+BloomfilterTest.cc.o:
+	cd /root/huangqz/codes/filter/bloom/build && $(MAKE) -f test/CMakeFiles/utest.dir/build.make test/CMakeFiles/utest.dir/BloomfilterTest.cc.o
+.PHONY : BloomfilterTest.cc.o
+
+BloomfilterTest.i: BloomfilterTest.cc.i
+
+.PHONY : BloomfilterTest.i
+
+# target to preprocess a source file
+BloomfilterTest.cc.i:
+	cd /root/huangqz/codes/filter/bloom/build && $(MAKE) -f test/CMakeFiles/utest.dir/build.make test/CMakeFiles/utest.dir/BloomfilterTest.cc.i
+.PHONY : BloomfilterTest.cc.i
+
+BloomfilterTest.s: BloomfilterTest.cc.s
+
+.PHONY : BloomfilterTest.s
+
+# target to generate assembly for a file
+BloomfilterTest.cc.s:
+	cd /root/huangqz/codes/filter/bloom/build && $(MAKE) -f test/CMakeFiles/utest.dir/build.make test/CMakeFiles/utest.dir/BloomfilterTest.cc.s
+.PHONY : BloomfilterTest.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -167,6 +191,9 @@ help:
 	@echo "... BitmapTest.o"
 	@echo "... BitmapTest.i"
 	@echo "... BitmapTest.s"
+	@echo "... BloomfilterTest.o"
+	@echo "... BloomfilterTest.i"
+	@echo "... BloomfilterTest.s"
 .PHONY : help
 
 

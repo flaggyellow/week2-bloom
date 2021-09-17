@@ -6,3 +6,33 @@
 
 #IncludeRegexTransform: 
 
+../include/bitmap.h
+vector
+-
+
+../include/bloomfilter.h
+vector
+-
+string
+-
+bitmap.h
+../include/bitmap.h
+murmur3.h
+../include/murmur3.h
+
+../include/murmur3.h
+stdint.h
+-
+
+/root/huangqz/codes/filter/bloom/test/BitmapTest.cc
+bitmap.h
+/root/huangqz/codes/filter/bloom/test/bitmap.h
+catch2/catch_test_macros.hpp
+-
+
+/root/huangqz/codes/filter/bloom/test/BloomfilterTest.cc
+bloomfilter.h
+/root/huangqz/codes/filter/bloom/test/bloomfilter.h
+catch2/catch_test_macros.hpp
+-
+

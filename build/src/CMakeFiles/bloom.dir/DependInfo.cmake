@@ -19,6 +19,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/root/huangqz/codes/filter/bloom/src/bitmap.cc" "/root/huangqz/codes/filter/bloom/build/src/CMakeFiles/bloom.dir/bitmap.cc.o"
   "/root/huangqz/codes/filter/bloom/src/bloomfilter.cc" "/root/huangqz/codes/filter/bloom/build/src/CMakeFiles/bloom.dir/bloomfilter.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -4,5 +4,11 @@
 src/CMakeFiles/bloom.dir/murmur3.c.o
  ../include/murmur3.h
  /root/huangqz/codes/filter/bloom/src/murmur3.c
+src/CMakeFiles/bloom.dir/bitmap.cc.o
+ ../include/bitmap.h
+ /root/huangqz/codes/filter/bloom/src/bitmap.cc
 src/CMakeFiles/bloom.dir/bloomfilter.cc.o
+ ../include/bitmap.h
+ ../include/bloomfilter.h
+ ../include/murmur3.h
  /root/huangqz/codes/filter/bloom/src/bloomfilter.cc

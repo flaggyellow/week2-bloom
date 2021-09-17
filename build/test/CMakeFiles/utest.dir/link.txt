@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/utest.dir/BitmapTest.cc.o  -o utest  -Wl,-rpath,/root/huangqz/codes/filter/bloom/build/src ../src/libbloom.so /usr/local/lib/libCatch2Main.a /usr/local/lib/libCatch2.a 
+/usr/bin/c++     CMakeFiles/utest.dir/BitmapTest.cc.o CMakeFiles/utest.dir/BloomfilterTest.cc.o  -o utest  -Wl,-rpath,/root/huangqz/codes/filter/bloom/build/src ../src/libbloom.so /usr/local/lib/libCatch2Main.a /usr/local/lib/libCatch2.a 

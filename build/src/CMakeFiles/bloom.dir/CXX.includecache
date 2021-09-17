@@ -6,5 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/root/huangqz/codes/filter/bloom/src/bloomfilter.cc
+../include/bitmap.h
+vector
+-
+
+/root/huangqz/codes/filter/bloom/src/bitmap.cc
+bitmap.h
+/root/huangqz/codes/filter/bloom/src/bitmap.h
 

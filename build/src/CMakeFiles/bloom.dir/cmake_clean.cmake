@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/bloom.dir/bitmap.cc.o"
   "CMakeFiles/bloom.dir/bloomfilter.cc.o"
   "CMakeFiles/bloom.dir/murmur3.c.o"
   "libbloom.pdb"

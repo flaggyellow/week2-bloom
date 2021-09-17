@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/root/huangqz/codes/filter/bloom/test/BitmapTest.cc" "/root/huangqz/codes/filter/bloom/build/test/CMakeFiles/utest.dir/BitmapTest.cc.o"
+  "/root/huangqz/codes/filter/bloom/test/BloomfilterTest.cc" "/root/huangqz/codes/filter/bloom/build/test/CMakeFiles/utest.dir/BloomfilterTest.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

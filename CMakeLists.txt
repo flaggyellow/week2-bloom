@@ -1,9 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 project(bloom)
 
-# 打开vobose选项
-set(CMAKE_VERBOSE_MAKEFILE on)
-
 # c++按照11标准
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

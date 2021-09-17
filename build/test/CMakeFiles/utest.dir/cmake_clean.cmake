@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/utest.dir/BitmapTest.cc.o"
+  "CMakeFiles/utest.dir/BloomfilterTest.cc.o"
   "utest"
   "utest.pdb"
 )

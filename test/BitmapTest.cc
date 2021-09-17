@@ -8,9 +8,11 @@ TEST_CASE( "bitmap usage", "[bitmap]" ) {
     SECTION( "initialization" ) {
         int expo = 20;
         unsigned long s = 1 << 15;
-        REQUIRE( b1.mapStatus(expo, s) == true );
+        REQUIRE( b1.getExpo() == expo );
+        REQUIRE( b1.getBit().size() == s );
         expo = 16;
         s = 1 << 11;
-        REQUIRE( b2.mapStatus(expo, s) == true );
+        REQUIRE( b2.getExpo() == expo );
+        REQUIRE( b2.getBit().size() == s );
     }
 }

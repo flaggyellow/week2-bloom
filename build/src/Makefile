@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -128,6 +125,33 @@ bloom/fast:
 	cd /root/huangqz/codes/filter/bloom/build && $(MAKE) -f src/CMakeFiles/bloom.dir/build.make src/CMakeFiles/bloom.dir/build
 .PHONY : bloom/fast
 
+bitmap.o: bitmap.cc.o
+
+.PHONY : bitmap.o
+
+# target to build an object file
+bitmap.cc.o:
+	cd /root/huangqz/codes/filter/bloom/build && $(MAKE) -f src/CMakeFiles/bloom.dir/build.make src/CMakeFiles/bloom.dir/bitmap.cc.o
+.PHONY : bitmap.cc.o
+
+bitmap.i: bitmap.cc.i
+
+.PHONY : bitmap.i
+
+# target to preprocess a source file
+bitmap.cc.i:
+	cd /root/huangqz/codes/filter/bloom/build && $(MAKE) -f src/CMakeFiles/bloom.dir/build.make src/CMakeFiles/bloom.dir/bitmap.cc.i
+.PHONY : bitmap.cc.i
+
+bitmap.s: bitmap.cc.s
+
+.PHONY : bitmap.s
+
+# target to generate assembly for a file
+bitmap.cc.s:
+	cd /root/huangqz/codes/filter/bloom/build && $(MAKE) -f src/CMakeFiles/bloom.dir/build.make src/CMakeFiles/bloom.dir/bitmap.cc.s
+.PHONY : bitmap.cc.s
+
 bloomfilter.o: bloomfilter.cc.o
 
 .PHONY : bloomfilter.o
@@ -191,6 +215,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... bloom"
+	@echo "... bitmap.o"
+	@echo "... bitmap.i"
+	@echo "... bitmap.s"
 	@echo "... bloomfilter.o"
 	@echo "... bloomfilter.i"
 	@echo "... bloomfilter.s"

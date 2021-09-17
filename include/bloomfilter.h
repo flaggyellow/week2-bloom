@@ -4,8 +4,8 @@
 #include <vector>
 #include <string>
 #include "bitmap.h"
+#include "murmur3.h"
 using namespace std;
-#define S_OK 0
 
 namespace bloomfilter{
 
@@ -15,13 +15,14 @@ namespace bloomfilter{
         Bloomfilter(int expo);
         bool isContain(std::string obj);
         int add(std::string obj);
-
+        int getExpo();
+        Bitmap* getBitmap();
+        ~Bloomfilter();
     private:
-        ~Bloomfilter() = default;
-        unsigned int _size;
-        Bitmap _bitmap;
+        int _expo;
+        Bitmap *_bitmap;
+        vector<int> seeds = {11, 13, 17, 19, 23, 31, 37, 41};
     };
-
 
 }   // namespace bloomfilter
 
