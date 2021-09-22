@@ -92,6 +92,7 @@ src/clean: src/CMakeFiles/bloom.dir/clean
 # Directory level rules for directory test
 
 # Recursive "all" directory target.
+test/all: test/CMakeFiles/perform.dir/all
 test/all: test/CMakeFiles/utest.dir/all
 
 .PHONY : test/all
@@ -102,6 +103,7 @@ test/preinstall:
 .PHONY : test/preinstall
 
 # Recursive "clean" directory target.
+test/clean: test/CMakeFiles/perform.dir/clean
 test/clean: test/CMakeFiles/utest.dir/clean
 
 .PHONY : test/clean
@@ -134,13 +136,40 @@ src/CMakeFiles/bloom.dir/clean:
 .PHONY : src/CMakeFiles/bloom.dir/clean
 
 #=============================================================================
+# Target rules for target test/CMakeFiles/perform.dir
+
+# All Build rule for target.
+test/CMakeFiles/perform.dir/all: src/CMakeFiles/bloom.dir/all
+	$(MAKE) -f test/CMakeFiles/perform.dir/build.make test/CMakeFiles/perform.dir/depend
+	$(MAKE) -f test/CMakeFiles/perform.dir/build.make test/CMakeFiles/perform.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/huangqz/codes/filter/bloom/build/CMakeFiles --progress-num=5,6 "Built target perform"
+.PHONY : test/CMakeFiles/perform.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/perform.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/huangqz/codes/filter/bloom/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/perform.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/huangqz/codes/filter/bloom/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/perform.dir/rule
+
+# Convenience name for target.
+perform: test/CMakeFiles/perform.dir/rule
+
+.PHONY : perform
+
+# clean rule for target.
+test/CMakeFiles/perform.dir/clean:
+	$(MAKE) -f test/CMakeFiles/perform.dir/build.make test/CMakeFiles/perform.dir/clean
+.PHONY : test/CMakeFiles/perform.dir/clean
+
+#=============================================================================
 # Target rules for target test/CMakeFiles/utest.dir
 
 # All Build rule for target.
 test/CMakeFiles/utest.dir/all: src/CMakeFiles/bloom.dir/all
 	$(MAKE) -f test/CMakeFiles/utest.dir/build.make test/CMakeFiles/utest.dir/depend
 	$(MAKE) -f test/CMakeFiles/utest.dir/build.make test/CMakeFiles/utest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/huangqz/codes/filter/bloom/build/CMakeFiles --progress-num=5,6,7 "Built target utest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/huangqz/codes/filter/bloom/build/CMakeFiles --progress-num=7,8,9 "Built target utest"
 .PHONY : test/CMakeFiles/utest.dir/all
 
 # Build rule for subdir invocation for target.

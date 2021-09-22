@@ -124,6 +124,19 @@ bloom/fast:
 .PHONY : bloom/fast
 
 #=============================================================================
+# Target rules for targets named perform
+
+# Build rule for target.
+perform: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 perform
+.PHONY : perform
+
+# fast build rule for target.
+perform/fast:
+	$(MAKE) -f test/CMakeFiles/perform.dir/build.make test/CMakeFiles/perform.dir/build
+.PHONY : perform/fast
+
+#=============================================================================
 # Target rules for targets named utest
 
 # Build rule for target.
@@ -145,6 +158,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... bloom"
+	@echo "... perform"
 	@echo "... utest"
 .PHONY : help
 

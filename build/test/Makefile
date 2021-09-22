@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/perform.dir/rule:
+	cd /root/huangqz/codes/filter/bloom/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/perform.dir/rule
+.PHONY : test/CMakeFiles/perform.dir/rule
+
+# Convenience name for target.
+perform: test/CMakeFiles/perform.dir/rule
+
+.PHONY : perform
+
+# fast build rule for target.
+perform/fast:
+	cd /root/huangqz/codes/filter/bloom/build && $(MAKE) -f test/CMakeFiles/perform.dir/build.make test/CMakeFiles/perform.dir/build
+.PHONY : perform/fast
+
+# Convenience name for target.
 test/CMakeFiles/utest.dir/rule:
 	cd /root/huangqz/codes/filter/bloom/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/utest.dir/rule
 .PHONY : test/CMakeFiles/utest.dir/rule
@@ -179,6 +194,33 @@ BloomfilterTest.cc.s:
 	cd /root/huangqz/codes/filter/bloom/build && $(MAKE) -f test/CMakeFiles/utest.dir/build.make test/CMakeFiles/utest.dir/BloomfilterTest.cc.s
 .PHONY : BloomfilterTest.cc.s
 
+performTest.o: performTest.cc.o
+
+.PHONY : performTest.o
+
+# target to build an object file
+performTest.cc.o:
+	cd /root/huangqz/codes/filter/bloom/build && $(MAKE) -f test/CMakeFiles/perform.dir/build.make test/CMakeFiles/perform.dir/performTest.cc.o
+.PHONY : performTest.cc.o
+
+performTest.i: performTest.cc.i
+
+.PHONY : performTest.i
+
+# target to preprocess a source file
+performTest.cc.i:
+	cd /root/huangqz/codes/filter/bloom/build && $(MAKE) -f test/CMakeFiles/perform.dir/build.make test/CMakeFiles/perform.dir/performTest.cc.i
+.PHONY : performTest.cc.i
+
+performTest.s: performTest.cc.s
+
+.PHONY : performTest.s
+
+# target to generate assembly for a file
+performTest.cc.s:
+	cd /root/huangqz/codes/filter/bloom/build && $(MAKE) -f test/CMakeFiles/perform.dir/build.make test/CMakeFiles/perform.dir/performTest.cc.s
+.PHONY : performTest.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,6 +228,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... perform"
 	@echo "... edit_cache"
 	@echo "... utest"
 	@echo "... BitmapTest.o"
@@ -194,6 +237,9 @@ help:
 	@echo "... BloomfilterTest.o"
 	@echo "... BloomfilterTest.i"
 	@echo "... BloomfilterTest.s"
+	@echo "... performTest.o"
+	@echo "... performTest.i"
+	@echo "... performTest.s"
 .PHONY : help
 
 
